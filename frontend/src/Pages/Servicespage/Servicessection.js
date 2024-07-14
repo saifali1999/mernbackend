@@ -36,7 +36,7 @@ const Servicessection = () => {
                     </div>
                 </div>
 
-                <div className='services-section'>
+                {/* <div className='services-section'>
                     <div className='container'>
                         <div className='row'>
                             {loading && <p>Loading...</p>}
@@ -52,7 +52,7 @@ const Servicessection = () => {
                             ))}
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 <Footer />
             </div>

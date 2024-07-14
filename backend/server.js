@@ -1,8 +1,9 @@
 const express = require("express");
-require("./db/conn");
+require('dotenv').config(); // Load environment variables
+require("./db/conn"); // Your database connection
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000; // Use PORT from .env or default to 5000
 
 const cors = require('cors');
 const corsOptions = {
@@ -14,15 +15,16 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-const newsRouter = require("./routes/news")
-const blogRouter = require("./routes/blog")
-const workRouter = require("./routes/ourWorks")
-const registerRouter = require("./routes/register")
-const aboutUsRouter = require("./routes/aboutUs")
-const servicesRouter = require("./routes/services")
-const teamRouter = require("./routes/team")
-const productRouter = require("./routes/product")
-const contactRouter = require("./routes/contact")
+const newsRouter = require("./routes/news");
+const blogRouter = require("./routes/blog");
+const workRouter = require("./routes/ourWorks");
+const registerRouter = require("./routes/register");
+const aboutUsRouter = require("./routes/aboutUs");
+const servicesRouter = require("./routes/services");
+const teamRouter = require("./routes/team");
+const productRouter = require("./routes/product");
+const contactRouter = require("./routes/contact");
+
 app.use(newsRouter);
 app.use(blogRouter);
 app.use(workRouter);
@@ -36,7 +38,6 @@ app.use(contactRouter);
 // Handle preflight requests
 // app.options('*', cors());
 
-
- app.listen(port, () => {
-    console.log(`connection is setup at ${port}`);
+app.listen(port, () => {
+  console.log(`Connection is set up at ${port}`);
 });

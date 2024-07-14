@@ -93,6 +93,7 @@ const updateBlogById = async (req, res) => {
     } catch (error) {
         res.status(400).json({ message: error.message });
     }
+    
 };
 
 // Delete a news item by ID
