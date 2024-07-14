@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.offcanvas{
+    width: 260px !important;
+}
+
+.dashboard_nav .navbar-toggler{
+    border: 1px solid #fff !important;
+}
+
+.page-link:focus{
+    box-shadow: none !important;
+}
+
+
+/* body.modal-open {
+    padding-right: 0 !important;
+}
+body.modal-open .navbar {
+    padding-right: 0 !important;
+}
+body.offcanvas.show .navbar {
+    padding-right: 0 !important;
+}
+html {
+    padding-right: 0 !important;
+} */
+body.no-scroll {
+    overflow: hidden !important;
+}
+.navbar, footer {
+    padding-right: 0 !important;
+}
+ 
+/* 
+    -- Created Our works api.
+    -- Created all works table page in dashboard.
+    -- Created add work form page in dashboard.
+    -- Created edit work form page in dashboard.
+
+    -- Added frontend code folder in my project.
+    -- Get data of blogs dymanically on blog page.
+    -- Get data of team member dymanically on home page.
+
+    -- Created a simple product api.
+    -- Created Add product form in the dashboard to check data submission.
+*/
+
+
+ .dashboard_nav .nav-item:hover{
+    background-color: lightgray;
+    padding: 6px 5px ;
+}
+ .dashboard_nav .nav-item{
+    padding: 6px 5px ;
+}
+
+footer{
+    background-color: rgb(0 0 1) !important;
+}
+
+
+
+  
+  
